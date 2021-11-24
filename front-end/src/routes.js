@@ -22,6 +22,7 @@ import Typography from "views/Typography.js";
 import Icons from "views/Icons.js";
 import Maps from "views/Maps.js";
 import Notifications from "views/Notifications.js";
+import Ticket from "components/Ticket/Ticket";
 
 const dashboardRoutes = [
   {
@@ -71,6 +72,13 @@ const dashboardRoutes = [
     name: "Notifications",
     icon: "nc-icon nc-bell-55",
     component: Notifications,
+    layout: "/admin",
+  },
+  {
+    path: "/tickets",
+    name: "Tickets",
+    icon: "nc-icon nc-single-copy-04",
+    component: Ticket,
     layout: "/admin",
   },
 ];
